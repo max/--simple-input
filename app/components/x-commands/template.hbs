@@ -1,0 +1,5 @@
+{{#each commands as |command|}}
+  {{x-commands-item command=command}}
+{{/each}}
+
+<input type="text" value={{currentCommand}} onkeyup={{action 'didInputCommand' value='target.value'}} autofocus>
